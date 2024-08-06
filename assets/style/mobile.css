@@ -148,4 +148,7 @@
     footer .logoFooter {
         width: 140px;
     }
+    .titleForm {
+        font-size: 22px;
+    }
 }
