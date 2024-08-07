@@ -354,18 +354,19 @@ footer .logo-etec {
 }
 
 .voteForms {
-   background-color: var(--terniary-color); 
-   min-height: 30vh;
-   border-radius: 15px;
-   display: flex;
-   justify-content: center;
-   flex-wrap: wrap;
-   padding: 20px;
-   text-align: center;
-   margin-bottom: 70px;
+    background-color: var(--terniary-color);
+    min-height: 30vh;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 70px;
 }
 
-.titleForm, .titleFormTwo{
+.titleForm,
+.titleFormTwo {
     font-family: 'Roboto';
     font-size: 24px;
     font-weight: 600;
@@ -387,18 +388,19 @@ footer .logo-etec {
     display: flex;
     flex-wrap: nowrap;
     font-family: 'Roboto';
-    font-size: 16px;
     font-weight: 400;
-    width: 60px;
+    width: 55px;
+    align-items: center;
     justify-content: space-between;
+    font-weight: 500;
 }
 
-.message textarea{
+.message textarea {
     width: 100%;
     min-height: 20vh;
     border-radius: 10px;
     border: none;
-
+    padding: 10px;
 }
 
 .voteForms button {
@@ -417,9 +419,10 @@ footer .logo-etec {
     font-weight: 500;
     transition: 0.2s;
 }
+
 .voteForms button:hover {
     font-size: 16px;
-    padding: 20px 30px;
+    padding: 20px 45px;
     background-color: var(--terniary-color);
     box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
     transition: 0.2s;
@@ -434,16 +437,17 @@ footer .logo-etec {
 }
 
 input[type=radio] {
-    --s: 1em;     /* control the size */
-    --c: var(--quinary-color); /* the active color */
-    
+    --s: 1em;
+    /* control the size */
+    --c: var(--quinary-color);
+    /* the active color */
+
     height: var(--s);
     aspect-ratio: 1;
     border: calc(var(--s)/8) solid var(--primary-color);
     padding: calc(var(--s)/8);
-    background: 
-       radial-gradient(farthest-side,var(--c) 94%,#0000) 
-       50%/0 0 no-repeat content-box;
+    background:
+        radial-gradient(farthest-side, var(--c) 94%, #0000) 50%/0 0 no-repeat content-box;
     border-radius: 50%;
     outline-offset: calc(var(--s)/10);
     -webkit-appearance: none;
@@ -452,33 +456,33 @@ input[type=radio] {
     cursor: pointer;
     font-size: inherit;
     transition: .3s;
-  }
-  input[type=radio]:checked {
+}
+
+input[type=radio]:checked {
     border-color: var(--c);
     background-size: 100% 100%;
-  }
-  
-  input[type=radio]:disabled {
-    background: 
-       linear-gradient(#939393 0 0) 
-       50%/100% 20% no-repeat content-box;
+}
+
+input[type=radio]:disabled {
+    background:
+        linear-gradient(#939393 0 0) 50%/100% 20% no-repeat content-box;
     opacity: .5;
     cursor: not-allowed;
-  }
-  
-  @media print {
+}
+
+@media print {
     input[type=radio] {
-      -webkit-appearance: auto;
-      -moz-appearance: auto;
-      appearance: auto;
-      background: none;
+        -webkit-appearance: auto;
+        -moz-appearance: auto;
+        appearance: auto;
+        background: none;
     }
-  }
-  
-  label {
-    display:inline-flex;
-    align-items:center;
-    gap:10px;
-    margin:5px 0;
+}
+
+label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0;
     cursor: pointer;
-  }
+}

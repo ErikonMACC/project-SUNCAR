@@ -60,17 +60,17 @@ document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('feedbackForm');
     
     form.addEventListener('submit', function (event) {
-        event.preventDefault(); // Impede o redirecionamento padrão
+        event.preventDefault(); 
 
         const formData = new FormData(form);
         
         fetch(form.action, {
             method: form.method,
             body: formData,
-            mode: 'no-cors' // Esta linha é importante para evitar problemas de CORS
+            mode: 'no-cors' 
         }).then(() => {
             alert('Formulário enviado com sucesso!');
-            form.reset(); // Reseta o formulário após o envio
+            form.reset(); 
         }).catch((error) => {
             alert('Ocorreu um erro ao enviar o formulário.');
             console.error('Error:', error);
